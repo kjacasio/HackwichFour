@@ -9,11 +9,25 @@
 import UIKit
 
 class thirdViewController: UIViewController {
-
+var friesString = "The background will turn green"
+    
+    @IBAction func changedButtonPressed(_ sender: Any)
+    {
+        self.view.backgroundColor = UIColor.green 
+    
+    }
+    
+    @IBOutlet weak var thirdLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        self.thirdLabel.text = "My Favorite Foods"
+        
+
+        
+        
+        
     }
     
 
